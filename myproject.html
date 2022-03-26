@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="myproject.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navleft">
+        <img
+          src="image/brandred.png"
+          alt="Logo dumbways ID"
+          width="40px"
+          height="30px"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li style="font-weight: bold;"><a href="myproject.html">My Project</a></li>
+        </ul>
+      </div>
+
+      <div class="navright">
+        <button><a href="contact.html">Contact Me</a></button>
+      </div>
+    </nav>
+
+    <div class="form-section">
+      <center><h1>ADD MY PROJECT</h1></center>
+      <form
+        onsubmit="inputProject(event)"
+        style="width: 600px; margin: 70px auto"
+      >
+        <!-- project name -->
+        <label
+          class="label"
+          for="project-name"
+          style="font-size: 18px; font-weight: bold"
+          >Project Name</label
+        >
+        <br />
+        <input class="projectName" type="text" id="project-name" />
+        <br />
+
+        <!-- date -->
+        <div class="date">
+          <div class="start">
+            <label class="label" for="start-date">Start Date</label> <br />
+            <input type="date" id="start-date" />
+          </div>
+          <div class="end" style="margin-left: 24px">
+            <label class="label" for="end-date">End Date</label> <br />
+            <input type="date" id="end-date" /> <br />
+          </div>
+        </div>
+
+        <!--  decspription-->
+
+        <label class="label" for="deskripsi">Description<br /> </label>
+        <textarea class="textArea" id="deskripsi"></textarea>
+
+        <!-- checkbox --> 
+        <p class="label">Technologies</p>
+        <div class="checkbox">
+          <div class="kiri">
+            <div style="padding-bottom: 30px">
+              <input type="checkbox" id="nodejs" value="fa-brands fa-node-js" />
+              <label class="lab-checkbox" for="nodejs"> Node Js </label> <br />
+            </div>
+            <div>
+              <input type="checkbox" id="reactjs" value="fa-brands fa-react" />
+              <label class="lab-checkbox" for="reactjs"> React Js </label>
+            </div>
+          </div>
+
+          <div class="kanan">
+            <div style="padding-bottom: 30px">
+              <input type="checkbox" id="nextjs" value="fa-brands fa-python"/>
+              <label class="lab-checkbox" for="nextjs"> Next JS </label> <br />
+            </div>
+            <div>
+              <input type="checkbox" id="javascript" value="fa-brands fa-js" />
+              <label class="lab-checkbox" for="javascript"> Javascript </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- upload image -->
+        <div style="margin-top: 15px">
+          <label class="label">Upload Image</label>
+          <label for="input-image">
+            <div for="input-image" class="image">
+              <div style="display: flex">
+                <button class="button-image">Choose</button>
+                <input class="buttonInput" type="file" id="input-image" hidden />
+              </div>
+              <div
+              style="display: flex; align-items: center; padding-left: 340px"
+              >
+              <img src="image/file.png" />
+            </div>
+          </label>
+          </div>
+        </div>
+
+        <!-- button -->
+        <button class="buttonForm">submit</button>
+      </form>
+
+
+      <!-- card -->
+      
+<div class="project">
+
+  <center><h1 style="padding-top: 40px;">My Project</h1>
+  </center>
+    <div class="box">
+      <div class="box-flex" id="box-flex">
+        <div  class="box-flex-1">
+          <div>
+          <img class="in-image" src="image/image1.jpg" />
+          <div class="content">
+          <a class="judul" href="outputproject.html"><p>Dumbway Mobile App - 2021</p></a>
+            <p>Durasi- 3 bulan</p>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Praesentium illo delectus fuga provident
+            </p>
+            <div>
+              <i class="fa-brands fa-js" style="font-size: 24px"></i>
+              <i class="fa-brands fa-react" style="font-size: 24px"></i>
+              <i class="fa-brands fa-node-js" style="font-size: 24px"></i>
+            </div> <br>
+            <button class="button1">edit</button>
+            <button class="button2">delete</button>
+          </div>
+        </div>
+        </div>
+
+      </div> 
+  </div>  
+    </div>
+    <script src="project.js"></script>
+  </body>
+</html>

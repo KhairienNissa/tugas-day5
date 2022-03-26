@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="contact.css">
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navleft">
+                <img src="brandred.png" alt="Logo dumbways ID" width="40px" height="30px">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+    
+                    <li>
+                        <a href="myproject.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="navright">
+               <button><a href="contact.html">Contact Me</a></button> 
+            </div>
+        </nav>
+    </body>
+    <center>
+    <h1>GET IN TOUCH</h1></center>
+
+    <form style="width: 500px; margin: 50px auto;" action="">
+        
+
+        <label for="name"> Name</label> <br>
+        <input style="
+        background-color:rgb(255, 255, 255); 
+        width: 100%; 
+        padding: 10px;
+        margin-bottom:10px;
+        border-radius: 5px;
+        box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
+        border: 1px solid rgb(255, 255, 255)" type="text" id="name">
+        <br>
+
+        <label for="email">Email</label> <br>
+        <input style="
+        background-color: rgb(255, 255, 255); 
+        width: 100%; 
+        padding: 10px;
+        margin-bottom:10px;
+        border-radius: 5px;
+        box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
+        border: 1px solid rgb(255, 255, 255)" type="email" id="email">
+        <br>
+
+        <label for="notelp">Phone Number</label> <br>
+        <input style="
+        background-color: rgb(255, 255, 255); 
+        width: 100%; 
+        padding: 10px;
+        margin-bottom:10px;
+        border-radius: 5px;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);"
+        
+        type="tel" id="notelp"> <br>
+
+        <label for="combobox">Subject</label> <br>
+    <select style="
+    background-color: rgb(255, 255, 255); 
+    width: 100%; 
+    padding: 10px;
+    margin-bottom:10px;
+    box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255)"
+    id="combobox">
+    <option></option>
+    <option>let's Collaboration</option>
+    <option>let's play</option>
+    <option>let's meet</option>
+</select> <br>
+
+<label for="textarea">Your Message</label><br>
+<textarea style="
+background-color: rgb(255, 255, 255); 
+width: 100%; 
+height: 100px;
+padding: 10px;
+margin-bottom:10px;
+box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
+border-radius: 5px;
+border: 1px solid rgb(209, 207, 207)" id="textarea"></textarea>
+<br>
+
+<button onclick="submitData()" type="button" style= "background-color: black;
+font-size: 13px;
+margin-top: 40px;
+border: none;
+margin-left: 410px;
+color: white;
+padding: 7px 24px;
+border-radius: 50px;
+box-shadow: 0px 0px 0px rgb(26, 25, 25);">submit</button>
+    </form>
+</html>
