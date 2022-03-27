@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #b8c7cc;
+    background-color: #E3E7EB;
     font-family:'Segoe UI';
     font-size: small;
     text-align: justify;
@@ -8,10 +8,12 @@ body {
 
 nav {
     width: 100%;
-    background-color: #e1dede;
+    background-color: #F4F3F3;
     height: 50px;
-    margin-top: 2px;
     display: flex;
+    position: fixed;
+    top : 0;
+    left: 0;
 }
 
 nav .navleft {
@@ -28,9 +30,19 @@ nav .navleft li{
     padding-right: 40px ;
     font-size: 15px;
 }
-a {
+
+.navleft a{
     text-decoration: none;
     color: black;
+}
+
+
+.navleft a:hover{
+    color: white;
+}
+
+.navleft a:any-link{
+    font-size: bolder;
 }
 
 nav .navright {
@@ -51,16 +63,14 @@ nav .navright button {
 
 nav .navright a {
     color: white;
-}
+    text-decoration: none;
 
-.form-section {
-    width: 100%;
 }
 
 .projectName {
     background-color:rgb(255, 255, 255); 
     width: 100%; 
-    padding: 15px;
+    height: 35px;
     margin-bottom:10px;
     border-radius: 5px;
     box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
@@ -74,22 +84,24 @@ nav .navright a {
 .label {
     font-size: 18px; 
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .start input {
     background-color: rgb(255, 255, 255); 
-    width:270px; 
-    padding: 15px;
+    width:235px; 
+    height: 35px;
     margin-bottom:10px;
     border-radius: 5px;
+    margin-right: 3px;
     box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
     border: 1px solid rgb(255, 255, 255);
 }
 
 .end input {
     background-color: rgb(255, 255, 255); 
-    width: 270px; 
-    padding: 15px; 
+    width: 235px; 
+    height: 35px;
     margin-bottom:10px;
     border-radius: 5px;
     border: 1px solid rgb(255, 255, 255);
@@ -100,8 +112,7 @@ nav .navright a {
     background-color: rgb(255, 255, 255); 
     width: 100%; 
     height: 100px;
-    padding: 15px;
-    margin-bottom:10px;
+    padding-top: 15px;
     box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
     border-radius: 5px;
     border: 1px solid rgb(209, 207, 207);
@@ -110,21 +121,21 @@ nav .navright a {
 
 .buttonForm {
     background-color: black;
-        font-size: 20px;
-        margin-top: 40px;
-        border: none;
-        margin-left: 520px;
-        color: white;
-        padding: 10px 30px;
-        border-radius: 50px;
-        box-shadow: 0px 0px 0px rgb(26, 25, 25);
+    font-size: 13px;
+    margin-top: 30px;
+    border: none;
+    margin-left: 410px;
+    color: white;
+    padding: 7px 24px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px rgb(26, 25, 25);
 }
 
 .image {
-    width: 630px;
+    width: 100%;
     height: 40px;
     background-color: white;
-    margin-top: 6px;
+    height: 35px;
     margin-bottom:20px;
     border-radius: 5px;
     box-shadow: 2px 1px 2px 1px rgb(209, 209, 209);
@@ -136,7 +147,7 @@ nav .navright a {
 .image img {
 width: 20px;
 height: 20px;
-padding-left: 130px;
+padding-left: 37px;
 }
 
 .button-image {
@@ -224,5 +235,10 @@ div i {
   
   .judul {
 font-weight: bold;
+text-decoration: none;
+color: black;
   }
 
+button {
+    cursor: pointer;
+}

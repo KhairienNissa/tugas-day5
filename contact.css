@@ -7,10 +7,13 @@ body {
 
 nav {
     width: 100%;
-    background-color: #e1dede;
+    background-color: #F4F3F3;
     height: 50px;
     margin-top: 2px;
     display: flex;
+    position: fixed;
+    top : 0;
+    left: 0;
 }
 
 nav .navleft {
@@ -27,9 +30,17 @@ nav .navleft li{
     padding-right: 40px ;
     font-size: 15px;
 }
-a {
+.navleft a {
     text-decoration: none;
     color: black;
+}
+
+.navleft a:hover{
+    color: white;
+}
+
+.navleft a:any-link{
+    font-size: bolder;
 }
 
 nav .navright {
@@ -50,6 +61,7 @@ nav .navright button {
 
 nav .navright a {
     color: white;
+    text-decoration: none;
 }
 
 label {
@@ -58,4 +70,6 @@ label {
 
 h1{
 margin: 20px auto;
+}
+
 }
